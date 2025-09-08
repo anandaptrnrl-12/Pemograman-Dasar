@@ -1,0 +1,298 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPtlicQ7rElN4yKxi8hTWE8",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/anandaptrnrl-12/Pemograman-Dasar/blob/main/Pertemuann%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 60,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "i86vPAPNbJUh",
+        "outputId": "1f794ca8-c923-4e68-8ec5-c0c4f46d8c5c"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "age = 17\n",
+        "salary = 5000000.0\n",
+        "\n",
+        "print(type(age))\n",
+        "print(type(salary))\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 6\n",
+        "print(type(x))"
+      ],
+      "metadata": {
+        "id": "5cT8mMaYbQf1",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "0f93697d-df09-4caf-a852-85488a0275d1"
+      },
+      "execution_count": 61,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 6.0\n",
+        "print(type(x))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7-9Iya8-groR",
+        "outputId": "5b91fc33-1a40-4ac8-dc05-3dcb44163e86"
+      },
+      "execution_count": 62,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 1+2j\n",
+        "print(type(x))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QDuf-llIg24a",
+        "outputId": "319c9d02-2ff3-4cdb-9b92-a6aa4a459cf7"
+      },
+      "execution_count": 63,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'complex'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var = 10\n",
+        "print(var)\n",
+        "print(id(var))\n",
+        "var = 11\n",
+        "print(var)\n",
+        "print(id(var))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eYrTFYajhJ1_",
+        "outputId": "8598fdd0-58a7-4d16-e604-40b93c48d4b5"
+      },
+      "execution_count": 64,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "11642376\n",
+            "11\n",
+            "11642408\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = True\n",
+        "print(type(x))\n",
+        "x = False\n",
+        "print(type(x))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1AvirZDXhSo1",
+        "outputId": "4d730064-86d6-4ee6-9186-6f2861ea0df1"
+      },
+      "execution_count": 65,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'bool'>\n",
+            "<class 'bool'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 'polibatam'\n",
+        "print(type(x))\n",
+        "\n",
+        "x = 'polibatam'\n",
+        "print(x[0])\n",
+        "\n",
+        "x = 'polibatam'\n",
+        "print(x[2:])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yCRatFVahaZU",
+        "outputId": "9cbf8009-b493-468f-ec16-05cfb9cade96"
+      },
+      "execution_count": 66,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'str'>\n",
+            "p\n",
+            "libatam\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "multi_line = \"\"\" Halo!\n",
+        "kapan terakhir kali kita bertemu?\n",
+        "kita bertemu hari jum'at yang lalu.\"\"\"\n",
+        "print(multi_line)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2nS0ciO_hi7c",
+        "outputId": "05717577-0337-453e-af4d-60e452e1860d"
+      },
+      "execution_count": 67,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " Halo!\n",
+            "kapan terakhir kali kita bertemu?\n",
+            "kita bertemu hari jum'at yang lalu.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 'polibatam'\n",
+        "x[0] = 'f'\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 166
+        },
+        "id": "BV4gfL7qht2A",
+        "outputId": "14fb9e49-e4c1-4611-938a-6fcdfe81fcc6"
+      },
+      "execution_count": 68,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "'str' object does not support item assignment",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-3238808045.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mx\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m'polibatam'\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mx\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m'f'\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'str' object does not support item assignment"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"Ananda Putri\"\n",
+        "print(f\"Hello, nama saya {name}\")\n",
+        "\n",
+        "name = \"Ananda Putri\"\n",
+        "print(\"Nama saya %s\" % (name))\n",
+        "\n",
+        "name = \"Ananda Putri\"\n",
+        "print(\"Nama saya {}\".format (name))\n",
+        "\n",
+        "name = \"Ananda Putri\"\n",
+        "print(\"Nama saya:\", name)\n"
+      ],
+      "metadata": {
+        "id": "PZWsHcdBiC5h"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
